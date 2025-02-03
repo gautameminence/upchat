@@ -9,6 +9,7 @@ import { ChatBotId as chatBotId } from "../../utils/constant/bot";
 import { UserSteps } from "../../utils/constant/userSteps";
 
 export const Widget = () => {
+  console.log("widget ::::::::::::::::::::::::::",chatBotId)
   const navigate = useNavigate();
 
   const [widgetData, setWidgetData] = useState({});
