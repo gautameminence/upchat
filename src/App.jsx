@@ -7,7 +7,7 @@ export const App = () => {
   console.log(ChatBotId  ,  !window.location.origin.includes("upchat.io") , "::::::::::::::::chatbotappjs")
   return   <Router>
   <Routes>
-    <Route path="/" element={ChatBotId || !window.location.origin.includes("upchat.io") ? <Widget /> : <NoChatBotId />} />
+    <Route path="/" element={ <Widget /> } />
     <Route path="/:chatBotId" element={<Widget />} />
   </Routes>
 </Router>
