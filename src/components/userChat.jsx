@@ -246,12 +246,12 @@ export const UserChat = ({
     <>
       <div
         className={`chatbox-height`}
-        style={{ height: widgetData.iconHeigth }}
+        style={{ height: widgetData?.iconHeigth }}
       >
         <div
           className={`chat-scroll ${platform}`}
           ref={chatContainerRef}
-          style={{ maxHeight: widgetData.iconHeigth, minHeight: "15.625em" }}
+          style={{ maxHeight: widgetData?.iconHeigth, minHeight: "15.625em" }}
         >
           <style>
             {`
