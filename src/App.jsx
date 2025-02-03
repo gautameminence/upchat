@@ -4,10 +4,10 @@ import { NoChatBotId } from "./components/noChatBotId";
 import { ChatBotId } from "./utils/constant/bot";
 
 export const App = () => {
-  console.log(ChatBotId  ,  !window.location.origin.includes("upchat.io") , "::::::::::::::::chatbotappjs")
+  console.log(ChatBotId  ,  !window.location.origin.includes("upchat.io") , "::::::::::::::::chatbot")
   return   <Router>
   <Routes>
-    <Route path="/" element={ <Widget /> } />
+    <Route path="/" element={<NoChatBotId />} />
     <Route path="/:chatBotId" element={<Widget />} />
   </Routes>
 </Router>
