@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(), cssInjectedByJsPlugin()],
   server: {
     host: true,
+    allowedHosts: true
   },
   preview: {
     port: 3000,
