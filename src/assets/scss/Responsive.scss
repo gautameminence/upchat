@@ -1,0 +1,32 @@
+
+
+$small-width: 320px;
+$tablet-width:768px;
+$large-width:992px;
+$extraLarge-width:1025px;
+$doubleExtraLarge-width:1200px;
+$dashboard-width:1400px;
+
+
+
+
+
+@mixin Phone {
+  @media (min-width: #{$small-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin Tablet{
+  @media (min-width: #{$tablet-width}) and (max-width: #{$large-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin TabletMidium {
+  @media (min-width: #{$large-width}) and (max-width: #{$extraLarge-width - 1px}) {
+    @content;
+  }
+}
+
+

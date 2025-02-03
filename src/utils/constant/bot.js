@@ -1,0 +1,1 @@
+export const ChatBotId = window.embeddedChatbotConfig?.botId || window.location.pathname.split("/")[1];
